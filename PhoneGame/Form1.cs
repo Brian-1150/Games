@@ -20,7 +20,7 @@ namespace PhoneGame {
         List<Label> userInputList = new List<Label>();
         bool play = false; // using this to ignore mouse clicks until it is time
         Label click;
-        // Working with sound player
+        // Workingwith sound player
         SoundPlayer phoneRing = new SoundPlayer(Properties.Resources.phone_ring2);
         SoundPlayer selectionSound = new SoundPlayer(Properties.Resources.click_x);
         SoundPlayer buzzer = new SoundPlayer(Properties.Resources.buzzer_x);
