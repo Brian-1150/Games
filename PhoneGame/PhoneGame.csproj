@@ -95,5 +95,17 @@
   <ItemGroup>
     <None Include="Resources\phone_ring2.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buzzer_x.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click_x.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tried.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whoops.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

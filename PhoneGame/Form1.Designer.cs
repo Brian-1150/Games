@@ -52,6 +52,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ringDurations = new System.Windows.Forms.Timer(this.components);
             this.UserPlayTimer = new System.Windows.Forms.Timer(this.components);
+            this.nextRound = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -509,8 +510,13 @@
             // 
             // UserPlayTimer
             // 
-            this.UserPlayTimer.Interval = 5000;
+            this.UserPlayTimer.Interval = 30000;
             this.UserPlayTimer.Tick += new System.EventHandler(this.UserPlayTimer_Tick);
+            // 
+            // nextRound
+            // 
+            this.nextRound.Interval = 1000;
+            this.nextRound.Tick += new System.EventHandler(this.nextRound_Tick);
             // 
             // Form1
             // 
@@ -558,6 +564,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer ringDurations;
         private System.Windows.Forms.Timer UserPlayTimer;
+        private System.Windows.Forms.Timer nextRound;
     }
 }
 
