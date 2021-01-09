@@ -9,3 +9,15 @@ C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\Games\Games\PhoneGame\obj\Debug\P
 C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\Games\Games\PhoneGame\obj\Debug\PhoneGame.exe
 C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\Games\Games\PhoneGame\obj\Debug\PhoneGame.pdb
 C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\Games\Games\PhoneGame\obj\Debug\PhoneGame.Resource1.resources
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\bin\Debug\PhoneGame.exe.config
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\bin\Debug\PhoneGame.exe
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\bin\Debug\PhoneGame.pdb
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\obj\Debug\PhoneGame.csprojAssemblyReference.cache
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\obj\Debug\PhoneGame.Form1.resources
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\obj\Debug\PhoneGame.Properties.Resources.resources
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\obj\Debug\PhoneGame.Resource1.resources
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\obj\Debug\PhoneGame.csproj.GenerateResource.cache
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\obj\Debug\PhoneGame.csproj.CoreCompileInputs.cache
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\obj\Debug\PhoneGame.exe
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\obj\Debug\PhoneGame.pdb
+C:\Users\ericl\ElevenFiftyProjects\BrianGame\Games\PhoneGame\obj\Debug\PhoneGame.Form2.resources
