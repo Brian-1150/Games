@@ -20,15 +20,19 @@ namespace PhoneGame {
         List<Label> userInputList = new List<Label>();
         bool play = false; // using this to ignore mouse clicks until it is time
         Label click;
-        // Working with sound player
+        // Workingwith sound player
         SoundPlayer phoneRing = new SoundPlayer(Properties.Resources.phone_ring2);
         SoundPlayer selectionSound = new SoundPlayer(Properties.Resources.click_x);
         SoundPlayer buzzer = new SoundPlayer(Properties.Resources.buzzer_x);
         SoundPlayer tried = new SoundPlayer(Properties.Resources.tried);
         SoundPlayer whoops = new SoundPlayer(Properties.Resources.whoops);
+        Form2 _form2 = new Form2();
+        int highScore = 0;
 
         public Form1() {
+            //_form2.textBox1_Enter();
             InitializeComponent();
+            
             MessageBox.Show("How to play:\n\n" +
                 "Closely follow the sequence, then carefully\n" +
                 " click the boxes in the same order they were displayed.  \n" +
@@ -37,6 +41,7 @@ namespace PhoneGame {
                 "program finishes revealing the boxes for that round before \n" +
                 "clicking.  Good luck!");
             SetUpGame();
+            
         }
 
         private void SetUpGame() {
@@ -44,7 +49,7 @@ namespace PhoneGame {
                 UserPlayGame();
             else
                 NumberOfTimes();
-
+            
         }
         private void NumberOfTimes() {
             int randomNumber;
@@ -100,9 +105,31 @@ namespace PhoneGame {
             for (int i = 0; i < (count - 1); i++) { //count is minus 1 because it was intentionally set to be one higher each round in another method but here it is still checking the prev round
                 if (sequenceList.ElementAt(i).Name != userInputList.ElementAt(i).Name) {//compare  each index item of both lists and game over if they are not equal
                     tried.Play();
-                    MessageBox.Show("Sorry!  You lose!\n" +
-                          $"  Your score: { sequenceList.Count - 1}");
-                    Close();
+                    if (sequenceList.Count - 1 > highScore)
+                    {
+                        highScore = sequenceList.Count - 1;
+                        DialogResult dialogResult = MessageBox.Show("Do you want to play again?", "Congratulations, you got the high score!!!!\n" +
+                         $"  Your score: { sequenceList.Count - 1}\n" +
+                         $"high score: {highScore}", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.No)
+                        {
+                            Close();
+                        }
+                    }
+                    else
+                    {
+                        DialogResult dialogResult2 = MessageBox.Show("Do you want to play again?", "Sorry!  You lose!\n" +
+                        $"  Your score: { sequenceList.Count - 1}\n" +
+                        $"high score: {highScore}", MessageBoxButtons.YesNo);
+
+                        if (dialogResult2 == DialogResult.No)
+                        {
+                            Close();
+                        }
+                    }
+
+                    play = false;
+                    count = 1;
                 }
             }
             sequenceList.Clear();
@@ -113,6 +140,11 @@ namespace PhoneGame {
         private void nextRound_Tick(object sender, EventArgs e) {
             nextRound.Stop();
             SetUpGame();
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
